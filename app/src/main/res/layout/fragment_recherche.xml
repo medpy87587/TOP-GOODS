@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recherche">
+    <LinearLayout
+        android:id="@+id/rech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gris_int"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="299dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/input_radios"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:drawablePadding="5dp"
+            android:gravity="center|start"
+            android:hint="Recherche ..."
+            android:padding="10dp"
+            android:textColorHint="@color/gris_int"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/filterImag"
+            android:layout_width="38dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:paddingStart="3dp"
+            android:src="@drawable/baseline_filter_alt_24" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="637dp"
+        android:layout_below="@+id/rech"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="13dp" />
+
+
+</RelativeLayout>

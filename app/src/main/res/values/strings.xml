@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">version1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sans_livraison">sans livraison</string>
+    <string name="avec_livraison">avec livraison</string>
+    <string name="price">price</string>
+    <string name="title_activity_testtt">testtt</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_web_client_id">806892730884-hlkpgbco0m9mclccsh76ml99i020nik7.apps.googleusercontent.com</string>
+</resources>

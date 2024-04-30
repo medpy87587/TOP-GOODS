@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:background="@color/wh_g"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_edit_24"
+        android:drawablePadding="5dp"
+        android:gravity="end"
+        android:text="Edit"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_watch_later_24"
+        android:fontFamily="@font/numans"
+        android:gravity="center|start"
+        android:text="I ya 2 minutes      "
+        android:textColor="@color/gris"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        app:srcCompat="@drawable/smartphone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="tablette sumsung S9"
+        android:textColor="@color/gris_int"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/prix_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/numans"
+        android:text="29.25TND"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+</LinearLayout>
+

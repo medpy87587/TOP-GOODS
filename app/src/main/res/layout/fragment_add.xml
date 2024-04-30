@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fixed Title -->
+    <TextView
+        android:id="@+id/fixed_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#FF9800"
+        android:fontFamily="@font/capriola"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Publier l'annonce"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fixed_title"
+        android:layout_alignParentStart="true"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Title -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/megaphone" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Titre"
+
+                android:textColor="@color/black" />
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="292dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/textTitle"
+                android:background="@drawable/input_radios"
+                android:hint="Ex : Tablette Galaxy Tab S9 Series"
+                android:padding="10dp"
+                android:textColorHint="@color/gris" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTitle"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Description"
+                android:textColor="@color/black" />
+
+            <!-- Category (Dropdown) -->
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="295dp"
+                android:layout_height="145dp"
+                android:layout_below="@id/editTitle"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/textDescription"
+                android:background="@drawable/input_radios"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:hint="Ex : Je met en vente ..."
+                android:padding="10dp"
+                android:textColorHint="@color/gris" />
+
+            <TextView
+                android:id="@+id/textCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@id/editDescription"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Catégorie:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/editDescription"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/textCategory"
+                android:spinnerMode="dropdown" />
+
+            <!-- Selected Category Display -->
+            <TextView
+                android:id="@+id/selectedCategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerCategory"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Livraison : "
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingEnd="30dp"
+                    android:text="Oui" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Non" />
+            </RadioGroup>
+
+
+            <FrameLayout
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/box">
+
+                <ImageView
+                    android:id="@+id/viewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp"
+                    android:scaleType="fitCenter" />
+
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ajouter image" />
+
+            <TextView
+                android:id="@+id/textGovernment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Governorat:"
+                android:textColor="@color/black" />
+
+
+            <Spinner
+                android:id="@+id/spinnerGovernment"
+                android:layout_width="292dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/textPhone"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/textGovernment"
+                android:background="@drawable/input_radios"
+                android:spinnerMode="dropdown" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerGovernment"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Téléphone:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="292dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/spinnerGovernment"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/textPhone"
+                android:background="@drawable/input_radios"
+                android:inputType="phone" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPhone"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Prix:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="292dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/editPhone"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/textPrice"
+                android:background="@drawable/input_radios"
+                android:inputType="numberDecimal" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPrice"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FF9800"
+                android:drawableBottom="@drawable/input_bg"
+                android:text="Poster" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:background="@color/wh_g">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/wh_g">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="128dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/smartphone"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image"
+        android:fontFamily="@font/allerta"
+        android:text="tablette sumsung S9"
+        android:textColor="@color/gris_int"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/prix_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/image"
+        android:fontFamily="@font/numans"
+        android:text="29.25TND"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prix_"
+        android:layout_toEndOf="@+id/image"
+        android:fontFamily="@font/numans"
+        android:text="Disponible"
+        android:textColor="#4CAF50"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prix_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_toEndOf="@+id/image"
+        android:fontFamily="@font/numans"
+        android:gravity="end"
+        android:hapticFeedbackEnabled="false"
+        android:paddingEnd="10dp"
+        android:text="Supprimer"
+        android:textColor="#FFC107"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</LinearLayout>
+

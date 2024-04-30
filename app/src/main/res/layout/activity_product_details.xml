@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/megaphone" />
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Tablette Sumsung"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                android:text="category"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gevernment"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/baseline_location_on_24"
+                    android:text="Touzeur"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/livraison"
+                    android:layout_width="274dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:nextFocusLeft="@id/gevernment"
+                    android:text="Avec livraison"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prix_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="21881 TND"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="TextView TextView TextView TextView  TextView vTextViewTextViewTextView TextView TextView TextView TextView TextView TextViewTextView TextView"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center|center_vertical"
+                    android:text="Poster par :" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profileCard"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:onClick="onProfileImageClick"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/profileOwner"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/baseline_account_circle_24"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/owner"
+                    android:layout_width="251dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="med Amine" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/hold"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/wh_g"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/accueil_bott"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/baseline_home_24"
+            android:backgroundTint="#FFC107"
+            android:backgroundTintMode="screen"
+            android:fadeScrollbars="false"
+            android:hapticFeedbackEnabled="true"
+            android:pointerIcon="wait"
+            android:shadowColor="#673AB7"
+            android:textColorHighlight="#FFC107" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/baseline_phone_24"
+            android:backgroundTint="#FFC107"
+            android:backgroundTintMode="screen"
+            android:paddingLeft="3dp"
+            android:paddingEnd="3dp"
+            android:shadowColor="#FFC107" />
+
+        <Button
+            android:id="@+id/addPanier"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="3dp"
+            android:backgroundTint="#FFC107"
+            android:drawableLeft="@drawable/baseline_add_shopping_cart_24"
+            android:fontFamily="@font/allerta"
+            android:text="ajouter panier"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
